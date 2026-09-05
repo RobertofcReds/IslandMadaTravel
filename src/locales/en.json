@@ -1,0 +1,355 @@
+{
+  "navbar": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "diego": "Diego-Suarez",
+    "nosy": "Nosy Be",
+    "book": "Book",
+    "reservation": "Reservation",
+    "contactWhatsapp": "Contact us on WhatsApp"
+  },
+  "home": {
+    "hero": {
+      "badge": "Exceptional Tour Guide",
+      "title": "Discover the Magic of Madagascar",
+      "subtitle": "Independent tour guide & personalized tours in Diego-Suarez & Nosy Be",
+      "cta_explore": "Explore Our Destinations",
+      "cta_contact": "Contact Me"
+    },
+    "destinations": {
+      "title": "Our Destinations",
+      "subtitle": "Explore the captivating wonders of the Antsiranana province",
+      "diego": {
+        "badge": "Main Destination",
+        "title": "Diego-Suarez Province",
+        "location": "Antsiranana, Madagascar",
+        "description": "Discover an exceptional region with unique landscapes: crystal-clear bays, paradise beaches, national parks and spectacular tsingy.",
+        "feature_bays": "Bays & Lagoons",
+        "feature_parks": "National Parks",
+        "feature_hiking": "Tsingy & Hiking",
+        "feature_culture": "History & Culture",
+        "cta": "Learn More"
+      },
+      "nosy": {
+        "badge": "Paradise Island",
+        "title": "Nosy Be Archipelago",
+        "location": "Nosy Be, Madagascar",
+        "description": "Discover an exceptional archipelago with sparkling white islands, crystal-clear turquoise waters and incomparable marine biodiversity.",
+        "feature_excursions": "Sea Excursions",
+        "feature_beaches": "Paradise Beaches",
+        "feature_snorkeling": "Snorkeling & Wildlife",
+        "feature_sunset": "Sunsets",
+        "cta": "Learn More"
+      }
+    },
+    "services": {
+      "title": "My Services",
+      "subtitle": "Customized support for a smooth and unforgettable stay",
+      "guiding": {
+        "title": "Tour Guiding",
+        "description": "Personalized accompaniment to discover the best preserved sites and local culture."
+      },
+      "organization": {
+        "title": "Stay Organization",
+        "description": "Complete planning of your trip: accommodation booking, activities and itineraries."
+      },
+      "transfers": {
+        "title": "Transfers & Transport",
+        "description": "Secure transfer service from the airport and adapted vehicles for all your excursions."
+      },
+      "excursions": {
+        "title": "Custom Excursions",
+        "description": "Creation of unique itineraries adjusted to your desires, your pace and your budget."
+      },
+      "translation": {
+        "title": "Translation & Assistance",
+        "description": "Language assistance and dedicated logistical support throughout your stay on the island."
+      },
+      "photos": {
+        "title": "Spots & Photos",
+        "description": "Recommendations of the most beautiful panoramas and best moments to capture your memories."
+      },
+      "cta": "Discover All My Services"
+    },
+    "cta": {
+      "title": "Ready for your adventure in Madagascar?",
+      "subtitle": "Contact me now to start planning your custom stay in Diego-Suarez and Nosy Be.",
+      "button": "Contact Me"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "About Me",
+      "subtitle": "Your passionate independent tour guide in Madagascar",
+      "cta_contact": "Contact Me",
+      "cta_learn": "Learn More"
+    },
+    "bio": {
+      "title": "Passionate about the beauty of my native land",
+      "paragraph1": "Specialist of the northern region of Madagascar, I show the wonders of my island to travelers from around the world.",
+      "paragraph2": "My goal is to offer you an authentic and custom experience, far from industrial tourist circuits. I know every corner of Diego-Suarez and Nosy Be, and I will be delighted to share with you my secret places and our warm culture.",
+      "paragraph3": "Whether you are passionate about biodiversity, paradise beaches, spectacular hikes or cultural encounters, I adapt each itinerary to your desires."
+    },
+    "stats": {
+      "experience": "Years of Experience",
+      "travelers": "Travelers Accompanied",
+      "custom": "Custom Tours"
+    },
+    "values": {
+      "title": "My Commitments",
+      "authenticity": {
+        "title": "Authenticity",
+        "description": "Immerse yourself in real Malagasy culture through authentic encounters and warm sharing."
+      },
+      "ecotourism": {
+        "title": "Ecotourism",
+        "description": "Deep respect for fauna, flora and local communities for eco-responsible tourism."
+      },
+      "serenity": {
+        "title": "Serenity",
+        "description": "Smooth organization, punctuality and guaranteed safety throughout your tours and transfers."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Contact Me",
+      "subtitle": "Ready to plan your Malagasy adventure in Diego-Suarez and Nosy Be?",
+      "cta_whatsapp": "Direct WhatsApp",
+      "cta_form": "Contact Form"
+    },
+    "info": {
+      "title": "Let's talk about your project",
+      "subtitle": "Don't hesitate to ask your questions or share your travel desires.",
+      "coordinates": "Direct Contact",
+      "location": "Location",
+      "location_value": "Antsiranana (Diego-Suarez), Madagascar",
+      "email": "Email",
+      "phone": "Phone",
+      "whatsapp": "WhatsApp"
+    },
+    "form": {
+      "title": "Send a Message",
+      "label_name": "Full Name *",
+      "placeholder_name": "Your name",
+      "label_email": "Email *",
+      "placeholder_email": "your@email.com",
+      "label_phone": "Phone",
+      "placeholder_phone": "+261 32 XX XXX XX",
+      "label_destination": "Destination",
+      "select_destination": "Select a destination",
+      "option_diego": "Diego-Suarez",
+      "option_nosy": "Nosy Be",
+      "option_both": "Both destinations",
+      "label_dates": "Approximate Dates",
+      "placeholder_dates": "Ex: July 2026",
+      "label_message": "Message *",
+      "placeholder_message": "Describe your travel project (number of people, preferences...)",
+      "submit": "Send My Request",
+      "success": "Thank you for your message! I will reply as soon as possible."
+    }
+  },
+  "destinations": {
+    "hero": {
+      "title": "Our Destinations",
+      "subtitle": "Explore the wonders of the Antsiranana province and its archipelagos",
+      "cta_diego": "Diego-Suarez",
+      "cta_nosy": "Nosy Be"
+    },
+    "content": {
+      "title": "Where would you like to go?",
+      "subtitle": "Two emblematic regions of northern Madagascar with unique landscapes and atmospheres.",
+      "diego": {
+        "badge": "Main Destination",
+        "title": "Diego-Suarez Province",
+        "location": "Antsiranana, Madagascar",
+        "description": "Discover an exceptional region with varied landscapes: crystal-clear bays, the Emerald Sea, national parks, spectacular tsingy and abundant biodiversity.",
+        "feature_bays": "Bays, Beaches & Lagoons (Emerald Sea)",
+        "feature_parks": "National Parks (Amber Mountain, Ankarana)",
+        "feature_tsingy": "Red Tsingy & Panoramic Viewpoints",
+        "feature_history": "Colonial history and Sakalava & Antakarana culture",
+        "cta": "Discover Diego-Suarez"
+      },
+      "nosy": {
+        "badge": "Paradise Island",
+        "title": "Nosy Be Archipelago",
+        "location": "Nosy Be, Madagascar",
+        "description": "Discover the perfumed island and its surrounding islets: white sand beaches lined with palm trees, preserved marine fauna, magical sunsets and relaxed atmosphere.",
+        "feature_excursions": "Maritime Excursions (Nosy Komba, Nosy Tanikely)",
+        "feature_snorkeling": "Snorkeling & Diving with Turtles",
+        "feature_lokobe": "Lokobe Nature Reserve",
+        "feature_sunset": "Sunsets at Mount Passot",
+        "cta": "Discover Nosy Be"
+      }
+    }
+  },
+  "diego": {
+    "hero": {
+      "title": "Diego-Suarez Province",
+      "subtitle": "The pearl of northern Madagascar — Antsiranana",
+      "cta_book": "Book Your Stay",
+      "cta_explore": "Explore"
+    },
+    "about": {
+      "badge": "Exceptional Destination",
+      "title": "About Diego-Suarez",
+      "paragraph1": "Diego-Suarez, now called Antsiranana, is a spectacular coastal city located at the extreme north of Madagascar. It is world-renowned for housing one of the most beautiful bays in the world.",
+      "paragraph2": "Discover a region with unique wild landscapes: crystal-clear bays, isolated beaches, preserved national parks, spectacular tsingy and exceptional biodiversity.",
+      "best_time_label": "Best time to visit:",
+      "best_time_value": "April to November (dry season)",
+      "cta": "Book Your Stay"
+    },
+    "sections": {
+      "beaches": {
+        "title": "Bays, Beaches & Lagoons",
+        "carousel_title": "Discover Our Paradise Beaches",
+        "carousel_description": "From crystal-clear lagoons to white sand beaches, explore the most beautiful corners of the coast"
+      },
+      "parks": {
+        "title": "National Parks & Reserves",
+        "carousel_title": "Explore Our Natural Parks",
+        "carousel_description": "Tropical forests, spectacular tsingy and unique marine reserves"
+      },
+      "hiking": {
+        "title": "Viewpoints, Hiking & Curiosities",
+        "carousel_title": "Panoramic Views and Hiking",
+        "carousel_description": "From peaks to sacred lakes, discover breathtaking panoramas"
+      },
+      "history": {
+        "title": "History, City & Urbanism",
+        "carousel_title": "Historical Heritage",
+        "carousel_description": "Colonial architecture, tropical gardens and cultural richness"
+      }
+    }
+  },
+  "nosy": {
+    "hero": {
+      "title": "Nosy Be Archipelago",
+      "subtitle": "The perfumed island and its tropical wonders",
+      "cta_book": "Book Your Stay",
+      "cta_explore": "Explore"
+    },
+    "about": {
+      "badge": "Exceptional Island",
+      "title": "About Nosy Be",
+      "paragraph1": "Nosy Be is Madagascar's flagship seaside destination. Nicknamed the « perfumed island » for its captivating scents of ylang-ylang and vanilla, it offers an idyllic setting.",
+      "paragraph2": "Discover an archipelago with turquoise waters, populated with preserved islets, coral sandbanks, dense natural reserves and fascinating marine fauna.",
+      "best_time_label": "Best time to visit:",
+      "best_time_value": "May to December",
+      "cta": "Book Your Stay"
+    },
+    "sections": {
+      "islands": {
+        "title": "Islands & Maritime Excursions",
+        "carousel_title": "Explore the Archipelago",
+        "carousel_description": "From desert islands to marine reserves, discover the treasures of the Indian Ocean"
+      },
+      "beaches": {
+        "title": "Beaches (On the main island)",
+        "carousel_title": "Paradise Beaches",
+        "carousel_description": "White sand, crystal-clear waters and tropical atmospheres"
+      },
+      "parks": {
+        "title": "Parks, Nature & Biodiversity",
+        "carousel_title": "Nature and Biodiversity",
+        "carousel_description": "Primary forests, eco-botanical reserves and endemic fauna"
+      },
+      "culture": {
+        "title": "Viewpoints, History & Culture",
+        "carousel_title": "Heritage and Culture",
+        "carousel_description": "Panoramic belvederes, sacred sites and historic villages"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "title": "My Services",
+      "subtitle": "Customized support to live unique adventures in Madagascar",
+      "cta_contact": "Contact Me",
+      "cta_list": "Discover the List"
+    },
+    "content": {
+      "title": "What I offer for your stay",
+      "subtitle": "Each service is designed to simplify your trip and make you live memorable moments.",
+      "guiding": {
+        "title": "Tour Guiding",
+        "description": "Private accompaniment and passionate guiding to explore the most beautiful sites of Antsiranana and Nosy Be in complete safety."
+      },
+      "organization": {
+        "title": "Stay Organization",
+        "description": "Turnkey planning of your itinerary: selection of the best accommodations, activities and on-site logistics."
+      },
+      "transfers": {
+        "title": "Transfers & Transport",
+        "description": "Provision of comfortable 4x4 vehicles with driver for your airport transfers and off-road excursions."
+      },
+      "excursions": {
+        "title": "Custom Excursions",
+        "description": "Creation of 100% personalized circuits according to your desires (hiking, relaxation, fauna, photography) and your pace."
+      },
+      "assistance": {
+        "title": "Assistance & Translation",
+        "description": "Facilitation of exchanges with locals, cultural explanations and reactive presence to handle any unforeseen event."
+      },
+      "photos": {
+        "title": "Photo Tips & Secret Spots",
+        "description": "Guidance to the best viewpoints and times of the day to immortalize unforgettable landscapes."
+      },
+      "quote_cta": "Request a Quote"
+    },
+    "why": {
+      "title": "Why work with me?",
+      "subtitle": "The guarantee of a human, smooth stay adapted to your requirements.",
+      "reason1": {
+        "title": "Native Local Expertise",
+        "description": "Perfect knowledge of the terrain, trails, climate and hidden secrets of the northern region."
+      },
+      "reason2": {
+        "title": "Flexibility & Personalization",
+        "description": "No imposed group: your itinerary is 100% adapted according to your pace, budget and expectations."
+      },
+      "reason3": {
+        "title": "Sharing & Passion",
+        "description": "A deep love for Madagascar transmitted with enthusiasm and authenticity at every step."
+      },
+      "reason4": {
+        "title": "Availability & Reactivity",
+        "description": "A single contact before, during and after your trip for total serenity."
+      }
+    }
+  },
+  "footer": {
+    "cta": {
+      "title": "Ready for an unforgettable adventure?",
+      "subtitle": "Discover our custom tours in Diego-Suarez and Nosy Be today.",
+      "button": "Request a Free Quote"
+    },
+    "bio": "Your local expert agency in Madagascar. We create custom trips to make you live the authentic beauty of the North of the island.",
+    "navigation": "Navigation",
+    "nav_home": "Home",
+    "nav_destinations": "Destinations",
+    "nav_services": "Our Services",
+    "nav_about": "About",
+    "nav_contact": "Contact",
+    "highlights": "Must-See",
+    "highlight_diego": "Diégo-Suarez",
+    "highlight_nosy": "Nosy Be",
+    "highlight_emerald": "Emerald Sea",
+    "highlight_ankarana": "Ankarana Park",
+    "contact": "Local Contact",
+    "copyright": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "common": {
+    "bookStay": "Book Your Stay",
+    "explore": "Explore",
+    "learnMore": "Learn More",
+    "contactMe": "Contact Me",
+    "discover": "Discover",
+    "readMore": "Read More"
+  }
+}
