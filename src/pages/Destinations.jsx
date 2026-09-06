@@ -2,16 +2,32 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 
+import diegoTroisBaies from '../images/destination/Les Trois Baies.jpg'
+import diegoMontagneAmbre from '../images/destination/Forêt de Montagne d\'Ambre.jpg'
+import diegoTsingyRouges from '../images/destination/Tsingy Rouges.jpg'
+import diegoRamena from '../images/destination/Plage de Ramena.jpg'
+import diegoMerEmeraude from '../images/destination/Mer d\'Émeraude.jpg'
+import nosyParfums from '../images/destination/Nosy Be - Île aux Parfums.jpg'
+import nosyIranja from '../images/destination/Nosy Iranja.jpg'
+import nosyTanikely from '../images/destination/Nosy Tanikely.jpg'
+import nosyAndilana from '../images/destination/Plage d\'Andilana.jpg'
+import nosyKomba from '../images/destination/Nosy Komba.jpg'
+
 const Destinations = () => {
   const { t } = useLanguage()
   const [heroIndex, setHeroIndex] = useState(0)
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    diegoMerEmeraude,
+    nosyIranja,
+    diegoTroisBaies,
+    nosyParfums,
+    diegoMontagneAmbre,
+    nosyTanikely,
+    diegoTsingyRouges,
+    nosyAndilana,
+    diegoRamena,
+    nosyKomba,
   ]
 
   useEffect(() => {
@@ -31,15 +47,14 @@ const Destinations = () => {
             alt="Destinations"
             className="w-full h-full object-cover transition-all duration-1000 scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
         </div>
 
         {/* Content */}
         <div className="container-custom text-center text-white relative z-10 px-4 min-w-0">
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3 break-words">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3 break-words drop-shadow-lg">
             <i className="fas fa-map-marked-alt text-emerald-400 shrink-0"></i> <span>{t('destinations.hero.title')}</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto break-words">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto break-words drop-shadow-md">
             {t('destinations.hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -90,7 +105,7 @@ const Destinations = () => {
               <div className="min-w-0">
                 <div 
                   className="relative h-72 bg-cover bg-center min-w-0"
-                  style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80")' }}
+                  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("${diegoMerEmeraude}")` }}
                 >
                   <span className="absolute top-4 right-4 bg-emerald-500 text-white px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider shadow truncate max-w-[75%] whitespace-nowrap shrink-0">
                     {t('destinations.content.diego.badge')}
@@ -143,7 +158,7 @@ const Destinations = () => {
               <div className="min-w-0">
                 <div 
                   className="relative h-72 bg-cover bg-center min-w-0"
-                  style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80")' }}
+                  style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("${nosyIranja}")` }}
                 >
                   <span className="absolute top-4 right-4 bg-emerald-500 text-white px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider shadow truncate max-w-[75%] whitespace-nowrap shrink-0">
                     {t('destinations.content.nosy.badge')}

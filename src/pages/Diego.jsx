@@ -4,6 +4,26 @@ import { useLanguage } from '../context/LanguageContext'
 import PlaceCard from '../components/PlaceCard'
 import PlaceDetailSection from '../components/PlaceDetailSection'
 
+import diegoImg1 from '../images/diego/024-img-20180622-wa0016-largejpg.jpg'
+import diegoImg2 from '../images/diego/024-the-kind-of-boats-that.jpg'
+import diegoImg3 from '../images/diego/025-north-mada-kite.jpg'
+import diegoImg4 from '../images/diego/025-north-mada-kite1.jpg'
+import diegoImg5 from '../images/diego/026-ambre.jpg'
+import diegoImg6 from '../images/diego/027-Tsingy_Ankarana_Madagascar_16-07-2004.jpg'
+import diegoImg7 from '../images/diego/027-unica.jpg'
+import diegoImg8 from '../images/diego/028-photo4jpg.jpg'
+import diegoImg9 from '../images/diego/029-caption.jpg'
+import diegoImg10 from '../images/diego/029-caption1.jpg'
+import diegoImg11 from '../images/diego/029-caption2.jpg'
+import diegoImg12 from '../images/diego/029-pain-de-sucre.jpg'
+import diegoImg13 from '../images/diego/029-photo0jpg.jpg'
+import diegoImg14 from '../images/diego/030-schone-zeit-auf-den-seychellen.jpg'
+import diegoImg15 from '../images/diego/030-schone-zeit-auf-den-seychellen1.jpg'
+import diegoImg16 from '../images/diego/031-cap diego.jpg'
+import diegoImg17 from '../images/diego/031-cap diego_one.jpg'
+import diegoImg18 from '../images/diego/031-cap diego_three.jpg'
+import diegoImg19 from '../images/diego/032-Montagne-dAmbre-Parc-Madagascar-1200x540.jpg'
+
 // ──────────────────────────────────────────────
 // Données enrichies : chaque lieu a images, histoire, anecdotes, faits, conseils
 // ──────────────────────────────────────────────
@@ -30,12 +50,12 @@ const diegoSections = [
           { title: 'Balade en pirogue', description: 'Des excursions en pirogue traditionnelle permettent d\'atteindre les bancs de sable inhabités au centre du lagon.' },
         ],
         facts: [
-          { icon: '📏', label: 'Superficie', value: 'Environ 18 km² de lagon protégé' },
-          { icon: '🌊', label: 'Profondeur', value: '50 cm à 2 m selon les zones — idéal pour la baignade' },
-          { icon: '🐠', label: 'Faune marine', value: 'Raies, étoiles de mer, concombres de mer et poissons multicolores' },
-          { icon: '🚤', label: 'Accès', value: 'En bateau depuis Ramena (25 min) ou depuis Diego centre (45 min)' },
-          { icon: '🌡️', label: 'Meilleure saison', value: 'Avril à novembre — eaux calmes et visibilité optimale' },
-          { icon: '📸', label: 'Photo idéale', value: 'Entre 6h et 8h du matin pour capturer la couleur émeraude emblématique' },
+          { icon: 'fas fa-ruler-combined', label: 'Superficie', value: 'Environ 18 km² de lagon protégé' },
+          { icon: 'fas fa-water', label: 'Profondeur', value: '50 cm à 2 m selon les zones — idéal pour la baignade' },
+          { icon: 'fas fa-fish', label: 'Faune marine', value: 'Raies, étoiles de mer, concombres de mer et poissons multicolores' },
+          { icon: 'fas fa-sailboat', label: 'Accès', value: 'En bateau depuis Ramena (25 min) ou depuis Diego centre (45 min)' },
+          { icon: 'fas fa-sun', label: 'Meilleure saison', value: 'Avril à novembre — eaux calmes et visibilité optimale' },
+          { icon: 'fas fa-camera', label: 'Photo idéale', value: 'Entre 6h et 8h du matin pour capturer la couleur émeraude emblématique' },
         ],
         tips: [
           'Portez des chaussures aquatiques — le fond est parfois rocheux et corallien.',
@@ -64,11 +84,11 @@ const diegoSections = [
           { title: 'Festival Donia', description: 'La plage accueille occasionnellement des concerts en plein air lors du festival Donia de Nosy Be.' },
         ],
         facts: [
-          { icon: '📏', label: 'Longueur', value: '3,5 km de plage de sable fin' },
-          { icon: '🏠', label: 'Village', value: 'Environ 3 000 habitants, communauté Antakarana' },
-          { icon: '🦞', label: 'Spécialité', value: 'Langouste grillée fraîche — les meilleurs prix de la région' },
-          { icon: '🚗', label: 'Distance', value: '18 km de Diego-Suarez, route asphaltée (25 min)' },
-          { icon: '🌅', label: 'Coucher de soleil', value: 'Face à l\'ouest — idéal pour les photos de fin de journée' },
+          { icon: 'fas fa-ruler-horizontal', label: 'Longueur', value: '3,5 km de plage de sable fin' },
+          { icon: 'fas fa-house-chimney', label: 'Village', value: 'Environ 3 000 habitants, communauté Antakarana' },
+          { icon: 'fas fa-utensils', label: 'Spécialité', value: 'Langouste grillée fraîche — les meilleurs prix de la région' },
+          { icon: 'fas fa-route', label: 'Distance', value: '18 km de Diego-Suarez, route asphaltée (25 min)' },
+          { icon: 'fas fa-cloud-sun', label: 'Coucher de soleil', value: 'Face à l\'ouest — idéal pour les photos de fin de journée' },
         ],
         tips: [
           'Goûtez aux langoustes grillées directement sur la plage — fraîches du matin même.',
@@ -96,10 +116,10 @@ const diegoSections = [
           { title: 'Bivouac observatoire', description: 'Certains guides proposent des nuits en tente pour observer les étoiles depuis ce promontoire isolé.' },
         ],
         facts: [
-          { icon: '📐', label: 'Altitude', value: '330 mètres au-dessus de la mer' },
-          { icon: '🥾', label: 'Randonnée', value: '2h30 aller-retour depuis le parking — sentier balisé' },
-          { icon: '🦎', label: 'Faune', value: 'Caméléons, geckos et lémuriens Sanford visibles sur le sentier' },
-          { icon: '🌅', label: 'Meilleure heure', value: 'En fin d\'après-midi pour la lumière dorée sur les baies' },
+          { icon: 'fas fa-mountain', label: 'Altitude', value: '330 mètres au-dessus de la mer' },
+          { icon: 'fas fa-person-hiking', label: 'Randonnée', value: '2h30 aller-retour depuis le parking — sentier balisé' },
+          { icon: 'fas fa-paw', label: 'Faune', value: 'Caméléons, geckos et lémuriens Sanford visibles sur le sentier' },
+          { icon: 'fas fa-clock', label: 'Meilleure heure', value: 'En fin d\'après-midi pour la lumière dorée sur les baies' },
         ],
         tips: [
           'Portez des chaussures de randonnée — le sentier peut être glissant après la pluie.',
@@ -125,10 +145,10 @@ const diegoSections = [
           { title: 'Excursion en 4x4', description: 'La piste d\'accès nécessite un 4x4, transformant le trajet en aventure à part entière à travers la savane.' },
         ],
         facts: [
-          { icon: '🚗', label: 'Accès', value: 'Piste 4x4 obligatoire — 1h30 depuis Diego-Suarez' },
-          { icon: '🐢', label: 'Tortues marines', value: 'Nidification de nov. à fév. (tortues vertes et caouannes)' },
-          { icon: '🏝️', label: 'Isolement', value: 'Aucune infrastructure touristique — paradis sauvage absolu' },
-          { icon: '🌊', label: 'Snorkeling', value: 'Récifs coralliens préservés à moins de 100m du bord' },
+          { icon: 'fas fa-truck-pickup', label: 'Accès', value: 'Piste 4x4 obligatoire — 1h30 depuis Diego-Suarez' },
+          { icon: 'fas fa-shield-halved', label: 'Tortues marines', value: 'Nidification de nov. à fév. (tortues vertes et caouannes)' },
+          { icon: 'fas fa-compass', label: 'Isolement', value: 'Aucune infrastructure touristique — paradis sauvage absolu' },
+          { icon: 'fas fa-water', label: 'Snorkeling', value: 'Récifs coralliens préservés à moins de 100m du bord' },
         ],
         tips: [
           'Indispensable : un véhicule 4x4 (location possible à Diego pour ~70 000 Ar/jour).',
@@ -165,12 +185,12 @@ const diegoSections = [
           { title: 'Grande Cascade en crue', description: 'Après les pluies de décembre-janvier, la Grande Cascade atteint 80 mètres de hauteur et un débit impressionnant.' },
         ],
         facts: [
-          { icon: '🌿', label: 'Superficie', value: '18 200 hectares de forêt primaire' },
-          { icon: '🦎', label: 'Espèces', value: '75 espèces d\'oiseaux, 25 espèces de reptiles, 8 espèces de lémuriens' },
-          { icon: '💧', label: 'Cascades', value: '3 cascades majeures dont la Grande Cascade (60m)' },
-          { icon: '🥾', label: 'Circuits', value: '6 sentiers balisés de 1h à une journée complète' },
-          { icon: '🚗', label: 'Accès', value: '40 km de Diego-Suarez, route asphaltée puis piste' },
-          { icon: '🎫', label: 'Entrée', value: '55 000 Ar (guide obligatoire inclus)' },
+          { icon: 'fas fa-tree', label: 'Superficie', value: '18 200 hectares de forêt primaire' },
+          { icon: 'fas fa-feather-pointed', label: 'Espèces', value: '75 espèces d\'oiseaux, 25 espèces de reptiles, 8 espèces de lémuriens' },
+          { icon: 'fas fa-water', label: 'Cascades', value: '3 cascades majeures dont la Grande Cascade (60m)' },
+          { icon: 'fas fa-signs-post', label: 'Circuits', value: '6 sentiers balisés de 1h à une journée complète' },
+          { icon: 'fas fa-car', label: 'Accès', value: '40 km de Diego-Suarez, route asphaltée puis piste' },
+          { icon: 'fas fa-ticket', label: 'Entrée', value: '55 000 Ar (guide obligatoire inclus)' },
         ],
         tips: [
           'Commencez tôt le matin (6h-7h) — les animaux sont actifs au lever du soleil.',
@@ -199,11 +219,11 @@ const diegoSections = [
           { title: 'Lumière rasante', description: 'En fin d\'après-midi, la lumière dorée crée des ombres dramatiques entre les pitons — paradis pour les photographes.' },
         ],
         facts: [
-          { icon: '🗺️', label: 'Distance', value: '80 km de Diego-Suarez (1h30 en 4x4)' },
-          { icon: '🔴', label: 'Matière', value: 'Latérite (argile riche en fer et aluminium oxydés)' },
-          { icon: '📏', label: 'Hauteur', value: 'Pitons de 1 à 10 mètres de hauteur' },
-          { icon: '⚠️', label: 'Fragilité', value: 'Ne touchez pas les tsingy — ils s\'effritent facilement' },
-          { icon: '🚗', label: 'Véhicule', value: '4x4 obligatoire — la piste est impraticable en berline' },
+          { icon: 'fas fa-route', label: 'Distance', value: '80 km de Diego-Suarez (1h30 en 4x4)' },
+          { icon: 'fas fa-layer-group', label: 'Matière', value: 'Latérite (argile riche en fer et aluminium oxydés)' },
+          { icon: 'fas fa-arrows-up-down', label: 'Hauteur', value: 'Pitons de 1 à 10 mètres de hauteur' },
+          { icon: 'fas fa-triangle-exclamation', label: 'Fragilité', value: 'Ne touchez pas les tsingy — ils s\'effritent facilement' },
+          { icon: 'fas fa-truck-pickup', label: 'Véhicule', value: '4x4 obligatoire — la piste est impraticable en berline' },
         ],
         tips: [
           'Portez des vêtements que vous n\'avez pas peur de salir — la latérite tache énormément.',
@@ -231,11 +251,11 @@ const diegoSections = [
           { title: 'Cérémonie Tromba', description: 'Lors des cérémonies Antakarana, des offrandes sont déposées au bord du lac aux crocodiles sacrés.' },
         ],
         facts: [
-          { icon: '🦇', label: 'Chauves-souris', value: 'Plus d\'1 million résidant dans les grandes grottes' },
-          { icon: '🐊', label: 'Crocodiles sacrés', value: 'Lac Sacré avec des crocodiles protégés par un fady depuis des siècles' },
-          { icon: '🦍', label: 'Lémuriens', value: '9 espèces dont le lémurien couronné et le lémurien sanford' },
-          { icon: '🕳️', label: 'Grottes', value: 'Réseau de 90 km de grottes dont certaines encore inexplorées' },
-          { icon: '⏱️', label: 'Visite', value: 'Prévoir 1 à 2 jours pour explorer correctement le site' },
+          { icon: 'fas fa-moon', label: 'Chauves-souris', value: 'Plus d\'1 million résidant dans les grandes grottes' },
+          { icon: 'fas fa-shield-halved', label: 'Crocodiles sacrés', value: 'Lac Sacré avec des crocodiles protégés par un fady depuis des siècles' },
+          { icon: 'fas fa-paw', label: 'Lémuriens', value: '9 espèces dont le lémurien couronné et le lémurien sanford' },
+          { icon: 'fas fa-dungeon', label: 'Grottes', value: 'Réseau de 90 km de grottes dont certaines encore inexplorées' },
+          { icon: 'fas fa-hourglass-half', label: 'Visite', value: 'Prévoir 1 à 2 jours pour explorer correctement le site' },
         ],
         tips: [
           'La visite des grottes nécessite une lampe frontale puissante — apportez la vôtre.',
@@ -271,11 +291,11 @@ const diegoSections = [
           { title: 'Observation des lémuriens', description: 'Les lémuriens Sanford sont actifs le matin et font régulièrement des passages près du sentier.' },
         ],
         facts: [
-          { icon: '📐', label: 'Altitude', value: '412 mètres — point culminant de la presqu\'île' },
-          { icon: '⏱️', label: 'Durée', value: '3 à 4 heures aller-retour (niveau moyen)' },
-          { icon: '🦎', label: 'Faune', value: 'Lémuriens Sanford, caméléons, rapaces, baobabs' },
-          { icon: '🎫', label: 'Entrée', value: 'Accès libre — guide local recommandé' },
-          { icon: '🌡️', label: 'Conseil', value: 'Partez avant 7h pour éviter la chaleur de midi' },
+          { icon: 'fas fa-mountain', label: 'Altitude', value: '412 mètres — point culminant de la presqu\'île' },
+          { icon: 'fas fa-stopwatch', label: 'Durée', value: '3 à 4 heures aller-retour (niveau moyen)' },
+          { icon: 'fas fa-paw', label: 'Faune', value: 'Lémuriens Sanford, caméléons, rapaces, baobabs' },
+          { icon: 'fas fa-ticket', label: 'Entrée', value: 'Accès libre — guide local recommandé' },
+          { icon: 'fas fa-temperature-high', label: 'Conseil', value: 'Partez avant 7h pour éviter la chaleur de midi' },
         ],
         tips: [
           'Partez absolument avec des chaussures de rando — le calcaire est tranchant et glissant.',
@@ -303,10 +323,10 @@ const diegoSections = [
           { title: 'Vue nocturne', description: 'Lors des nuits claires, la vue sur les lumières de Diego et les étoiles vaut le déplacement en soirée.' },
         ],
         facts: [
-          { icon: '📅', label: 'Date', value: 'Construit en 1942 lors de l\'Opération Ironclad (WWII)' },
-          { icon: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', label: 'Nationalité', value: 'Construction britannique, armée royale' },
-          { icon: '🚗', label: 'Accès', value: '8 km de Diego — piste 4x4 ou randonnée (2h)' },
-          { icon: '📏', label: 'Altitude', value: 'Environ 250 mètres sur la falaise' },
+          { icon: 'fas fa-calendar-days', label: 'Date', value: 'Construit en 1942 lors de l\'Opération Ironclad (WWII)' },
+          { icon: 'fas fa-flag', label: 'Nationalité', value: 'Construction britannique, armée royale' },
+          { icon: 'fas fa-route', label: 'Accès', value: '8 km de Diego — piste 4x4 ou randonnée (2h)' },
+          { icon: 'fas fa-mountain', label: 'Altitude', value: 'Environ 250 mètres sur la falaise' },
         ],
         tips: [
           'Combinez avec la visite du cimetière militaire français au pied de la montagne.',
@@ -332,10 +352,10 @@ const diegoSections = [
           { title: 'Nidification des oiseaux de mer', description: 'Des colonies de sternes et de frégates nichent au sommet de l\'île — visible depuis le bateau.' },
         ],
         facts: [
-          { icon: '🚤', label: 'Accès', value: 'En pirogue ou bateau depuis Ramena (20 min)' },
-          { icon: '⛔', label: 'Respect', value: 'Île sacrée — respectez les fady locaux sans exception' },
-          { icon: '🦅', label: 'Oiseaux', value: 'Colonie de sternes, frégates et pailles-en-queue' },
-          { icon: '🌊', label: 'Snorkeling', value: 'Eaux claires autour de l\'île — excellent pour le snorkeling' },
+          { icon: 'fas fa-sailboat', label: 'Accès', value: 'En pirogue ou bateau depuis Ramena (20 min)' },
+          { icon: 'fas fa-ban', label: 'Respect', value: 'Île sacrée — respectez les fady locaux sans exception' },
+          { icon: 'fas fa-dove', label: 'Oiseaux', value: 'Colonie de sternes, frégates et pailles-en-queue' },
+          { icon: 'fas fa-water', label: 'Snorkeling', value: 'Eaux claires autour de l\'île — excellent pour le snorkeling' },
         ],
         tips: [
           'Demandez à votre guide les fady (tabous) à respecter avant de débarquer.',
@@ -371,11 +391,11 @@ const diegoSections = [
           { title: 'Soirées boulevard du port', description: 'En soirée, le boulevard du port s\'anime de restaurants de fruits de mer, de musique live et de buvettes locales.' },
         ],
         facts: [
-          { icon: '🏛️', label: 'Fondation', value: 'Port colonial français établi en 1886' },
-          { icon: '👥', label: 'Population', value: 'Environ 115 000 habitants (2021)' },
-          { icon: '🌍', label: 'Multiculturalisme', value: 'Malgaches Antakarana, Français, Arabes, Indiens, Comoriens' },
-          { icon: '🎭', label: 'Vie culturelle', value: 'Nombreux festivals, marchés artisanaux et musique vazimba' },
-          { icon: '🏰', label: 'Architecture', value: 'Immeubles coloniaux classés du début du XXe siècle' },
+          { icon: 'fas fa-landmark', label: 'Fondation', value: 'Port colonial français établi en 1886' },
+          { icon: 'fas fa-users', label: 'Population', value: 'Environ 115 000 habitants (2021)' },
+          { icon: 'fas fa-globe', label: 'Multiculturalisme', value: 'Malgaches Antakarana, Français, Arabes, Indiens, Comoriens' },
+          { icon: 'fas fa-masks-theater', label: 'Vie culturelle', value: 'Nombreux festivals, marchés artisanaux et musique vazimba' },
+          { icon: 'fas fa-building-columns', label: 'Architecture', value: 'Immeubles coloniaux classés du début du XXe siècle' },
         ],
         tips: [
           'La visite à pied du centre prend 2-3h — partez tôt le matin pour éviter la chaleur.',
@@ -401,10 +421,10 @@ const diegoSections = [
           { title: 'Floraison des orchidées', description: 'En octobre-novembre, les orchidées indigènes du jardin sont en pleine floraison — spectacle végétal exceptionnel.' },
         ],
         facts: [
-          { icon: '🌸', label: 'Collection', value: 'Plus de 200 espèces de plantes tropicales et endémiques' },
-          { icon: '📅', label: 'Fondation', value: 'Créé au début du XXe siècle, époque coloniale française' },
-          { icon: '⏱️', label: 'Visite', value: '1 à 2 heures de promenade tranquille' },
-          { icon: '🎫', label: 'Entrée', value: 'Gratuit ou entrée symbolique selon période' },
+          { icon: 'fas fa-seedling', label: 'Collection', value: 'Plus de 200 espèces de plantes tropicales et endémiques' },
+          { icon: 'fas fa-calendar-days', label: 'Fondation', value: 'Créé au début du XXe siècle, époque coloniale française' },
+          { icon: 'fas fa-stopwatch', label: 'Visite', value: '1 à 2 heures de promenade tranquille' },
+          { icon: 'fas fa-ticket', label: 'Entrée', value: 'Gratuit ou entrée symbolique selon période' },
         ],
         tips: [
           'Idéal en milieu de journée pour se mettre à l\'ombre et récupérer de l\'ardeur du soleil.',
@@ -430,11 +450,25 @@ const Diego = () => {
   const [activeSection, setActiveSection] = useState('beaches')
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    diegoImg1,
+    diegoImg2,
+    diegoImg3,
+    diegoImg4,
+    diegoImg5,
+    diegoImg6,
+    diegoImg7,
+    diegoImg8,
+    diegoImg9,
+    diegoImg10,
+    diegoImg11,
+    diegoImg12,
+    diegoImg13,
+    diegoImg14,
+    diegoImg15,
+    diegoImg16,
+    diegoImg17,
+    diegoImg18,
+    diegoImg19,
   ]
 
   useEffect(() => {
@@ -456,9 +490,6 @@ const Diego = () => {
             alt="Diégo-Suarez"
             className="w-full h-full object-cover transition-all duration-1000 scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
-          {/* Gradient bas */}
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
         </div>
 
         <div className="container-custom text-center text-white relative z-10 px-4">
@@ -466,11 +497,11 @@ const Diego = () => {
             <i className="fas fa-map-marker-alt text-emerald-400 text-xs" />
             <span>Antsiranana — Nord de Madagascar</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3 drop-shadow-lg">
             <i className="fas fa-wind text-emerald-400 shrink-0" />
             <span>{t('diego.hero.title')}</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-95 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-md">
             {t('diego.hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

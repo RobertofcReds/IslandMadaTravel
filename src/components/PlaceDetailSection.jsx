@@ -289,9 +289,15 @@ const PlaceDetailSection = ({ place, onClose }) => {
                   {place.facts.map((fact, i) => (
                     <div
                       key={i}
-                      className="bg-gray-50 dark:bg-gray-700/50 rounded-xl sm:rounded-2xl p-3.5 sm:p-4 border border-gray-100 dark:border-gray-700 flex items-start gap-3"
+                      className="bg-gray-50 dark:bg-gray-700/50 rounded-xl sm:rounded-2xl p-3.5 sm:p-4 border border-gray-100 dark:border-gray-700 flex items-start gap-3.5 hover:border-emerald-200 dark:hover:border-emerald-700/60 transition-all duration-200 group"
                     >
-                      <span className="text-xl sm:text-2xl shrink-0">{fact.icon}</span>
+                      <div className="w-10 h-10 rounded-xl bg-emerald-100/80 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0 text-base shadow-sm group-hover:scale-105 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-200">
+                        {fact.icon?.startsWith?.('fa') ? (
+                          <i className={fact.icon} />
+                        ) : (
+                          <span className="text-lg">{fact.icon}</span>
+                        )}
+                      </div>
                       <div className="min-w-0 flex-1">
                         <p className="font-semibold text-gray-900 dark:text-white text-xs sm:text-sm">
                           {fact.label}

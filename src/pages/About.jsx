@@ -1,17 +1,29 @@
 import { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 
+import about4 from '../images/about/IMG20251113153333.jpg'
+import about5 from '../images/about/IMG_20250818_095525131_MF_PORTRAIT.jpg'
+import about6 from '../images/about/IMG_20250818_105958718_MF_PORTRAIT.jpg'
+import about7 from '../images/about/IMG_20250818_112042306.jpg'
+import about8 from '../images/about/IMG_20250901_105406224_MF_PORTRAIT.jpg'
+import about9 from '../images/about/IMG_20250901_114656041_MF_PORTRAIT.jpg'
+import about10 from '../images/about/IMG_20250901_114719079_MF_PORTRAIT.jpg'
+import about11 from '../images/about/IMG_20250902_131209829_MF_PORTRAIT.jpg'
+
 const About = () => {
   const { t } = useLanguage()
   const [heroIndex, setHeroIndex] = useState(0)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    about4,
+    about5,
+    about6,
+    about7,
+    about8,
+    about9,
+    about10,
+    about11,
   ]
 
   useEffect(() => {
@@ -22,11 +34,11 @@ const About = () => {
   }, [heroImages.length])
 
   const guideImages = [
-    { url: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', caption: 'Guidage dans la forêt de Montagne d\'Ambre' },
-    { url: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', caption: 'Visite des Tsingy Rouges' },
-    { url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', caption: 'Excursion à la Mer d\'Émeraude' },
-    { url: 'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', caption: 'Randonnée à la Montagne des Français' },
-    { url: 'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', caption: 'Découverte de Nosy Be' },
+    { url: about5, caption: 'Guidage dans la forêt de Montagne d\'Ambre' },
+    { url: about6, caption: 'Visite des Tsingy Rouges' },
+    { url: about8, caption: 'Excursion à la Mer d\'Émeraude' },
+    { url: about9, caption: 'Randonnée à la Montagne des Français' },
+    { url: about11, caption: 'Découverte de Nosy Be' },
   ]
 
   useEffect(() => {
@@ -47,27 +59,26 @@ const About = () => {
             alt="À Propos"
             className="w-full h-full object-cover transition-all duration-1000 scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
         </div>
 
         <div className="container-custom text-center text-white relative z-10 px-4 min-w-0">
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3 break-words">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3 break-words drop-shadow-lg">
             <i className="fas fa-user text-emerald-400 shrink-0"></i> <span>{t('about.hero.title')}</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-90 max-w-2xl mx-auto break-words">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 max-w-2xl mx-auto break-words drop-shadow-md">
             {t('about.hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
-              href="https://wa.me/261325539635" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://wa.me/261325539635"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-8 py-3.5 rounded-full transition-all shadow-lg whitespace-nowrap shrink-0 max-w-full truncate text-center"
             >
               {t('about.hero.cta_contact')}
             </a>
-            <a 
-              href="#about" 
+            <a
+              href="#about"
               className="bg-white/10 hover:bg-white/20 text-white border border-white/30 backdrop-blur-md font-medium px-8 py-3.5 rounded-full transition-all whitespace-nowrap shrink-0 max-w-full truncate text-center"
             >
               {t('about.hero.cta_learn')}
@@ -80,9 +91,8 @@ const About = () => {
             <button
               key={index}
               onClick={() => setHeroIndex(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                index === heroIndex ? 'bg-emerald-400 scale-125' : 'bg-white/50 hover:bg-white/80'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all ${index === heroIndex ? 'bg-emerald-400 scale-125' : 'bg-white/50 hover:bg-white/80'
+                }`}
             />
           ))}
         </div>
@@ -91,7 +101,7 @@ const About = () => {
       {/* Main Content */}
       <div className="py-20 overflow-hidden" id="about">
         <div className="container-custom max-w-7xl mx-auto px-6">
-          
+
           {/* Bio + Image Slider */}
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-24 min-w-0">
             <div className="min-w-0">
@@ -122,9 +132,8 @@ const About = () => {
                     <button
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
-                      className={`h-1.5 rounded-full transition-all ${
-                        index === currentImageIndex ? 'w-8 bg-emerald-400' : 'w-2 bg-white/50'
-                      }`}
+                      className={`h-1.5 rounded-full transition-all ${index === currentImageIndex ? 'w-8 bg-emerald-400' : 'w-2 bg-white/50'
+                        }`}
                     />
                   ))}
                 </div>

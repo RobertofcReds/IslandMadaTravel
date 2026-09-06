@@ -4,6 +4,22 @@ import { useLanguage } from '../context/LanguageContext'
 import PlaceCard from '../components/PlaceCard'
 import PlaceDetailSection from '../components/PlaceDetailSection'
 
+import nosyImg1 from '../images/nosy/013-remo-e-berenice.jpg'
+import nosyImg2 from '../images/nosy/014---nosy-tanikely.jpg'
+import nosyImg3 from '../images/nosy/015-plage-de-nosy-iranja.jpg'
+import nosyImg4 from '../images/nosy/016-20180711-171613-largejpg.jpg'
+import nosyImg5 from '../images/nosy/016-kratersee.jpg'
+import nosyImg6 from '../images/nosy/018-baleines-randeau-nosy.jpg'
+import nosyImg7 from '../images/nosy/018-requin-baleine-rand-eau.jpg'
+import nosyImg8 from '../images/nosy/019-caption.jpg'
+import nosyImg9 from '../images/nosy/019-caption1.jpg'
+import nosyImg10 from '../images/nosy/019-caption2.jpg'
+import nosyImg11 from '../images/nosy/019-terrasse-de-restaurant.jpg'
+import nosyImg12 from '../images/nosy/020-andilana-beach-resort1.jpg'
+import nosyImg13 from '../images/nosy/020-andilana-beach-resort2.jpg'
+import nosyImg14 from '../images/nosy/021-cascade_caption.jpg'
+import nosyImg15 from '../images/nosy/022-nosy-be-original.jpg'
+
 // ──────────────────────────────────────────────
 // Données enrichies Nosy Be
 // ──────────────────────────────────────────────
@@ -29,12 +45,12 @@ const nosySections = [
           { title: 'Snorkeling au récif corallien', description: 'Autour des deux îlots, des récifs coralliens préservés abritent une faune marine exceptionnelle : tortues, raies léopard, poissons-perroquets.' },
         ],
         facts: [
-          { icon: '🐢', label: 'Tortues marines', value: 'Nidification de tortues vertes (Chelonia mydas) nov.-fév.' },
-          { icon: '🏝️', label: 'Composition', value: 'Nosy Iranja Be et Nosy Iranja Kely reliées à marée basse' },
-          { icon: '🚤', label: 'Accès', value: '2h30 en bateau depuis Nosy Be (mer parfois agitée)' },
-          { icon: '🌊', label: 'Snorkeling', value: 'Visibilité jusqu\'à 15 m — parmi les meilleures de Madagascar' },
-          { icon: '💡', label: 'Phare', value: 'Phare colonial de 1910 — vue panoramique depuis le sommet' },
-          { icon: '⚓', label: 'Idéal pour', value: 'Excursion journée complète avec pique-nique sur la plage' },
+          { icon: 'fas fa-shield-halved', label: 'Tortues marines', value: 'Nidification de tortues vertes (Chelonia mydas) nov.-fév.' },
+          { icon: 'fas fa-umbrella-beach', label: 'Composition', value: 'Nosy Iranja Be et Nosy Iranja Kely reliées à marée basse' },
+          { icon: 'fas fa-ship', label: 'Accès', value: '2h30 en bateau depuis Nosy Be (mer parfois agitée)' },
+          { icon: 'fas fa-water', label: 'Snorkeling', value: 'Visibilité jusqu\'à 15 m — parmi les meilleures de Madagascar' },
+          { icon: 'fas fa-tower-observation', label: 'Phare', value: 'Phare colonial de 1910 — vue panoramique depuis le sommet' },
+          { icon: 'fas fa-anchor', label: 'Idéal pour', value: 'Excursion journée complète avec pique-nique sur la plage' },
         ],
         tips: [
           'Réservez pour la période de marée basse pour traverser le banc de sable — demandez les horaires à votre guide.',
@@ -63,12 +79,12 @@ const nosySections = [
           { title: 'Montée au phare historique', description: 'En haut du phare de 1904, une vue à 360° sur Nosy Be, Nosy Komba et les îlots environnants récompense l\'ascension.' },
         ],
         facts: [
-          { icon: '🌊', label: 'Snorkeling', value: 'Profondeur 3-8m — accès direct depuis la plage' },
-          { icon: '🐢', label: 'Tortues', value: 'Tortues vertes et caouannes résidentes, visibles garanties' },
-          { icon: '🚤', label: 'Distance', value: '45 min en bateau depuis Nosy Be' },
-          { icon: '🏛️', label: 'Phare', value: 'Construit en 1904 — monument historique classé' },
-          { icon: '🐠', label: 'Poissons', value: 'Plus de 150 espèces de poissons identifiées autour de l\'île' },
-          { icon: '🎫', label: 'Entrée', value: 'Réserve marine — droits d\'accès obligatoires' },
+          { icon: 'fas fa-water', label: 'Snorkeling', value: 'Profondeur 3-8m — accès direct depuis la plage' },
+          { icon: 'fas fa-shield-halved', label: 'Tortues', value: 'Tortues vertes et caouannes résidentes, visibles garanties' },
+          { icon: 'fas fa-ship', label: 'Distance', value: '45 min en bateau depuis Nosy Be' },
+          { icon: 'fas fa-tower-observation', label: 'Phare', value: 'Construit en 1904 — monument historique classé' },
+          { icon: 'fas fa-fish', label: 'Poissons', value: 'Plus de 150 espèces de poissons identifiées autour de l\'île' },
+          { icon: 'fas fa-ticket', label: 'Entrée', value: 'Réserve marine — droits d\'accès obligatoires' },
         ],
         tips: [
           'Combinez avec Nosy Komba pour une journée d\'excursion parfaite.',
@@ -96,11 +112,11 @@ const nosySections = [
           { title: 'Marché artisanal d\'Ampangorina', description: 'Le village produit des bijoux en perles, des nattes tressées et des sculptures en bois — achat direct chez l\'artisan.' },
         ],
         facts: [
-          { icon: '🦍', label: 'Lémuriens', value: 'Lémurien macaco noir (Eulemur macaco) — espèce protégée par fady' },
-          { icon: '🏘️', label: 'Village', value: 'Ampangorina — village de pêcheurs Sakalava ancestral' },
-          { icon: '🚤', label: 'Distance', value: '30 min en bateau depuis Nosy Be' },
-          { icon: '🎨', label: 'Artisanat', value: 'Célèbre pour la broderie et les bijoux en perles locaux' },
-          { icon: '⛰️', label: 'Randonnée', value: 'Montée possible jusqu\'au sommet (2h30) avec vue magnifique' },
+          { icon: 'fas fa-paw', label: 'Lémuriens', value: 'Lémurien macaco noir (Eulemur macaco) — espèce protégée par fady' },
+          { icon: 'fas fa-house-chimney', label: 'Village', value: 'Ampangorina — village de pêcheurs Sakalava ancestral' },
+          { icon: 'fas fa-ship', label: 'Distance', value: '30 min en bateau depuis Nosy Be' },
+          { icon: 'fas fa-palette', label: 'Artisanat', value: 'Célèbre pour la broderie et les bijoux en perles locaux' },
+          { icon: 'fas fa-mountain', label: 'Randonnée', value: 'Montée possible jusqu\'au sommet (2h30) avec vue magnifique' },
         ],
         tips: [
           'Les lémuriens sont actifs le matin et en fin d\'après-midi — évitez les heures chaudes.',
@@ -128,11 +144,11 @@ const nosySections = [
           { title: 'Plongée dans les grottes sous-marines', description: 'Des grottes sous-marines peu connues abritent des gorgones géantes, des homards et des murènes — plongée de niveau avancé recommandée.' },
         ],
         facts: [
-          { icon: '🌋', label: 'Géologie', value: 'Colonnes basaltiques de 50m formées il y a 65 millions d\'années' },
-          { icon: '🚤', label: 'Accès', value: '4-5h de bateau depuis Nosy Be — excursion de 2-3 jours recommandée' },
-          { icon: '🐟', label: 'Faune marine', value: 'Requins-baleines observés fréquemment en saison (oct-déc)' },
-          { icon: '⚓', label: 'Logistique', value: 'Excursion de 2-3 jours avec nuit à bord ou en camping' },
-          { icon: '🎣', label: 'Pêche', value: 'Pêche sportive exceptionnelle — thon, marlin, dorade coryphène' },
+          { icon: 'fas fa-gem', label: 'Géologie', value: 'Colonnes basaltiques de 50m formées il y a 65 millions d\'années' },
+          { icon: 'fas fa-ship', label: 'Accès', value: '4-5h de bateau depuis Nosy Be — excursion de 2-3 jours recommandée' },
+          { icon: 'fas fa-fish-fins', label: 'Faune marine', value: 'Requins-baleines observés fréquemment en saison (oct-déc)' },
+          { icon: 'fas fa-campground', label: 'Logistique', value: 'Excursion de 2-3 jours avec nuit à bord ou en camping' },
+          { icon: 'fas fa-fish', label: 'Pêche', value: 'Pêche sportive exceptionnelle — thon, marlin, dorade coryphène' },
         ],
         tips: [
           'Cette excursion est pour les aventuriers confirmés — prévoir 2-3 jours minimum.',
@@ -168,11 +184,11 @@ const nosySections = [
           { title: 'Marché de poissons au crépuscule', description: 'Les pêcheurs locaux ramènent leur pêche en fin d\'après-midi — une scène de vie authentique qui contraste avec la beauté sauvage du décor.' },
         ],
         facts: [
-          { icon: '📏', label: 'Longueur', value: '2 km de plage de sable blanc fin' },
-          { icon: '🌊', label: 'Profondeur', value: 'Très peu profonde sur 200m — idéale pour les enfants' },
-          { icon: '🌅', label: 'Coucher de soleil', value: 'Face à l\'ouest — meilleur spectacle de 17h30 à 18h30' },
-          { icon: '🏨', label: 'Hébergement', value: 'Quelques lodges de charme en retrait de la plage' },
-          { icon: '🚗', label: 'Distance', value: '30 km d\'Hell-Ville — route asphaltée mais sinueuse' },
+          { icon: 'fas fa-ruler-horizontal', label: 'Longueur', value: '2 km de plage de sable blanc fin' },
+          { icon: 'fas fa-water', label: 'Profondeur', value: 'Très peu profonde sur 200m — idéale pour les enfants' },
+          { icon: 'fas fa-cloud-sun', label: 'Coucher de soleil', value: 'Face à l\'ouest — meilleur spectacle de 17h30 à 18h30' },
+          { icon: 'fas fa-hotel', label: 'Hébergement', value: 'Quelques lodges de charme en retrait de la plage' },
+          { icon: 'fas fa-car', label: 'Distance', value: '30 km d\'Hell-Ville — route asphaltée mais sinueuse' },
         ],
         tips: [
           'Arrivez en fin d\'après-midi pour profiter du coucher de soleil et rester pour le dîner.',
@@ -199,11 +215,11 @@ const nosySections = [
           { title: 'Soirées karaoké & musique live', description: 'Plusieurs bars de plage organisent des soirées musicales jusqu\'à minuit — ambiance garantie mêlant locaux et touristes.' },
         ],
         facts: [
-          { icon: '🍹', label: 'Restaurants', value: 'Nombreux restaurants de plage avec fruits de mer frais' },
-          { icon: '🪁', label: 'Sports nautiques', value: 'Kite-surf, jet-ski, kayak, planche à voile disponibles' },
-          { icon: '🏨', label: 'Hébergements', value: 'Hôtels de toutes catégories à moins de 5 min à pied' },
-          { icon: '🚕', label: 'Accès', value: '3 km d\'Hell-Ville — taxi ou moto-taxi (2 000 Ar)' },
-          { icon: '📅', label: 'Animations', value: 'Marché artisanal et soirées musicales certains soirs' },
+          { icon: 'fas fa-martini-glass-citrus', label: 'Restaurants', value: 'Nombreux restaurants de plage avec fruits de mer frais' },
+          { icon: 'fas fa-wind', label: 'Sports nautiques', value: 'Kite-surf, jet-ski, kayak, planche à voile disponibles' },
+          { icon: 'fas fa-hotel', label: 'Hébergements', value: 'Hôtels de toutes catégories à moins de 5 min à pied' },
+          { icon: 'fas fa-taxi', label: 'Accès', value: '3 km d\'Hell-Ville — taxi ou moto-taxi (2 000 Ar)' },
+          { icon: 'fas fa-music', label: 'Animations', value: 'Marché artisanal et soirées musicales certains soirs' },
         ],
         tips: [
           'Idéale pour les familles avec enfants — plage surveillée et commodités disponibles.',
@@ -229,10 +245,10 @@ const nosySections = [
           { title: 'Barbecue de rue en soirée', description: 'À la tombée du jour, des vendeurs ambulants installent des grillades de rue avec poissons et brochettes pour une expérience gastronomique locale.' },
         ],
         facts: [
-          { icon: '🐟', label: 'Pêche', value: 'Village de pêcheurs actif — arrivée du poisson frais chaque matin' },
-          { icon: '🍽️', label: 'Cuisine', value: 'Restaurants locaux avec poissons grillés et "romazava" (plat national)' },
-          { icon: '💰', label: 'Budget', value: 'Moins cher que Madirokely — idéal pour voyageurs à petit budget' },
-          { icon: '🌊', label: 'Snorkeling', value: 'Bons spots de snorkeling accessibles à 200m de la plage' },
+          { icon: 'fas fa-fish', label: 'Pêche', value: 'Village de pêcheurs actif — arrivée du poisson frais chaque matin' },
+          { icon: 'fas fa-utensils', label: 'Cuisine', value: 'Restaurants locaux avec poissons grillés et "romazava" (plat national)' },
+          { icon: 'fas fa-coins', label: 'Budget', value: 'Moins cher que Madirokely — idéal pour voyageurs à petit budget' },
+          { icon: 'fas fa-water', label: 'Snorkeling', value: 'Bons spots de snorkeling accessibles à 200m de la plage' },
         ],
         tips: [
           'Essayez le "carry de poisson" dans les gargotes locales — c\'est délicieux et très abordable.',
@@ -266,12 +282,12 @@ const nosySections = [
           { title: 'Traversée en pirogue vers la réserve', description: 'L\'accès par pirogue depuis Befotaka est en lui-même une expérience mémorable — longeant la mangrove avant d\'entrer dans la forêt primaire.' },
         ],
         facts: [
-          { icon: '🌿', label: 'Superficie', value: '740 hectares de forêt primaire protégée' },
-          { icon: '🐍', label: 'Python', value: 'Seul habitat malgache du Python de Seba (hasta 5 mètres)' },
-          { icon: '🦎', label: 'Caméléons', value: '5 espèces de caméléons endémiques dont Calumma boettgeri' },
-          { icon: '🐒', label: 'Lémuriens', value: 'Lémurien macaco noir — espèce emblématique de Nosy Be' },
-          { icon: '🚣', label: 'Accès', value: 'Pirogue obligatoire depuis Befotaka (20 min)' },
-          { icon: '🎫', label: 'Permis', value: 'Permis obligatoire — obtenu via MNP à Hell-Ville' },
+          { icon: 'fas fa-tree', label: 'Superficie', value: '740 hectares de forêt primaire protégée' },
+          { icon: 'fas fa-shield-halved', label: 'Python', value: 'Seul habitat malgache du Python de Seba (hasta 5 mètres)' },
+          { icon: 'fas fa-dragon', label: 'Caméléons', value: '5 espèces de caméléons endémiques dont Calumma boettgeri' },
+          { icon: 'fas fa-paw', label: 'Lémuriens', value: 'Lémurien macaco noir — espèce emblématique de Nosy Be' },
+          { icon: 'fas fa-sailboat', label: 'Accès', value: 'Pirogue obligatoire depuis Befotaka (20 min)' },
+          { icon: 'fas fa-ticket', label: 'Permis', value: 'Permis obligatoire — obtenu via MNP à Hell-Ville' },
         ],
         tips: [
           'Réservez le permis à l\'avance auprès de Madagascar National Parks à Hell-Ville.',
@@ -309,12 +325,12 @@ const nosySections = [
           { title: 'Cérémonie du Fanompoa', description: 'Une fois par an, lors du Fanompoa (cérémonie de renouveau Sakalava), des offrandes sont déposées sur les rives des lacs sacrés au lever du soleil.' },
         ],
         facts: [
-          { icon: '📐', label: 'Altitude', value: '318 mètres — point culminant de Nosy Be' },
-          { icon: '🌊', label: 'Lacs sacrés', value: '7 lacs aux couleurs différentes visibles depuis le sommet' },
-          { icon: '🐊', label: 'Crocodiles', value: 'Lac Bemary — crocodiles sacrés Sakalava, intouchables' },
-          { icon: '🚗', label: 'Accès', value: 'Route carrossable jusqu\'au sommet (15 km d\'Hell-Ville)' },
-          { icon: '🌅', label: 'Meilleure heure', value: '17h-19h pour le coucher de soleil spectaculaire' },
-          { icon: '📸', label: 'Photographie', value: 'Un trépied est utile pour les photos en lumière de fin de journée' },
+          { icon: 'fas fa-mountain', label: 'Altitude', value: '318 mètres — point culminant de Nosy Be' },
+          { icon: 'fas fa-water', label: 'Lacs sacrés', value: '7 lacs aux couleurs différentes visibles depuis le sommet' },
+          { icon: 'fas fa-shield-halved', label: 'Crocodiles', value: 'Lac Bemary — crocodiles sacrés Sakalava, intouchables' },
+          { icon: 'fas fa-car', label: 'Accès', value: 'Route carrossable jusqu\'au sommet (15 km d\'Hell-Ville)' },
+          { icon: 'fas fa-cloud-sun', label: 'Meilleure heure', value: '17h-19h pour le coucher de soleil spectaculaire' },
+          { icon: 'fas fa-camera', label: 'Photographie', value: 'Un trépied est utile pour les photos en lumière de fin de journée' },
         ],
         tips: [
           'Arrivez une heure avant le coucher de soleil pour trouver un bon emplacement — c\'est très fréquenté.',
@@ -343,11 +359,11 @@ const nosySections = [
           { title: 'Marché local du vendredi', description: 'Le marché hebdomadaire de Marodoka est un moment de rencontre authentique entre les habitants des villages environnants.' },
         ],
         facts: [
-          { icon: '📅', label: 'Fondation', value: 'XVe siècle — parmi les plus anciens villages de Nosy Be' },
-          { icon: '🕌', label: 'Patrimoine', value: 'Ruines de mosquées et inscriptions arabes du XVIIe siècle' },
-          { icon: '🏺', label: 'Archéologie', value: 'Poteries chinoises, perles de verre asiatiques exhumées' },
-          { icon: '🚗', label: 'Distance', value: '12 km d\'Hell-Ville — piste partielle' },
-          { icon: '🤝', label: 'Authenticité', value: 'Village vivant — rencontres avec des habitants dans leur quotidien' },
+          { icon: 'fas fa-calendar-days', label: 'Fondation', value: 'XVe siècle — parmi les plus anciens villages de Nosy Be' },
+          { icon: 'fas fa-mosque', label: 'Patrimoine', value: 'Ruines de mosquées et inscriptions arabes du XVIIe siècle' },
+          { icon: 'fas fa-landmark', label: 'Archéologie', value: 'Poteries chinoises, perles de verre asiatiques exhumées' },
+          { icon: 'fas fa-route', label: 'Distance', value: '12 km d\'Hell-Ville — piste partielle' },
+          { icon: 'fas fa-handshake', label: 'Authenticité', value: 'Village vivant — rencontres avec des habitants dans leur quotidien' },
         ],
         tips: [
           'Un guide local est précieux pour comprendre l\'histoire et les légendes du village.',
@@ -376,11 +392,11 @@ const nosySections = [
           { title: 'Festival de la Vanille', description: 'En période de récolte (juillet-août), un marché spécial vanille s\'installe dans les rues du centre — parfums enivrants garantis.' },
         ],
         facts: [
-          { icon: '🏙️', label: 'Population', value: 'Environ 25 000 habitants — principale ville de Nosy Be' },
-          { icon: '⛵', label: 'Port', value: 'Port de commerce actif et terminal ferries pour le continent' },
-          { icon: '🌺', label: 'Ylang-ylang', value: 'Centre de commerce des huiles essentielles d\'ylang-ylang' },
-          { icon: '🏛️', label: 'Architecture', value: 'Immeubles coloniaux français du début du XXe siècle' },
-          { icon: '📅', label: 'Fondation', value: 'Nommée en 1841 sous la protection française (amiral de Hell)' },
+          { icon: 'fas fa-city', label: 'Population', value: 'Environ 25 000 habitants — principale ville de Nosy Be' },
+          { icon: 'fas fa-anchor', label: 'Port', value: 'Port de commerce actif et terminal ferries pour le continent' },
+          { icon: 'fas fa-spa', label: 'Ylang-ylang', value: 'Centre de commerce des huiles essentielles d\'ylang-ylang' },
+          { icon: 'fas fa-building-columns', label: 'Architecture', value: 'Immeubles coloniaux français du début du XXe siècle' },
+          { icon: 'fas fa-calendar-days', label: 'Fondation', value: 'Nommée en 1841 sous la protection française (amiral de Hell)' },
         ],
         tips: [
           'Le Bazary Be est à visiter tôt le matin (6h-9h) avant la chaleur et la foule.',
@@ -408,11 +424,21 @@ const Nosy = () => {
   const [activeSection, setActiveSection] = useState('islands')
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    nosyImg1,
+    nosyImg2,
+    nosyImg3,
+    nosyImg4,
+    nosyImg5,
+    nosyImg6,
+    nosyImg7,
+    nosyImg8,
+    nosyImg9,
+    nosyImg10,
+    nosyImg11,
+    nosyImg12,
+    nosyImg13,
+    nosyImg14,
+    nosyImg15,
   ]
 
   useEffect(() => {
@@ -434,8 +460,6 @@ const Nosy = () => {
             alt="Nosy Be"
             className="w-full h-full object-cover transition-all duration-1000 scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]" />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60" />
         </div>
 
         <div className="container-custom text-center text-white relative z-10 px-4">
@@ -443,11 +467,11 @@ const Nosy = () => {
             <i className="fas fa-map-marker-alt text-emerald-400 text-xs" />
             <span>Nosy Be — Archipel de l'Océan Indien</span>
           </div>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3">
+          <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 flex items-center justify-center gap-3 drop-shadow-lg">
             <i className="fas fa-tree text-emerald-400 shrink-0" />
             <span>{t('nosy.hero.title')}</span>
           </h1>
-          <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-95 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-95 max-w-2xl mx-auto drop-shadow-md">
             {t('nosy.hero.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
