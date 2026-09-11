@@ -22,11 +22,14 @@ const Home = () => {
   const [nosyIndex, setNosyIndex] = useState(0)
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1516483638261-f4dbaf036963?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    diegoMerEmeraude,
+    nosyIranja,
+    diegoTroisBaies,
+    nosyParfums,
+    diegoTsingyRouges,
+    nosyTanikely,
+    diegoMontagneAmbre,
+    nosyAndilana,
   ]
 
   const diegoMedia = [
@@ -86,8 +89,8 @@ const Home = () => {
               />
             </div>
           ))}
-          {/* Layer de dégradé sombre pour lisibilité du texte */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30"></div>
+          {/* Layer de dégradé adouci pour faire ressortir les images tout en gardant une excellente lisibilité */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-black/15"></div>
         </div>
 
         {/* Content */}

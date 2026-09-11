@@ -7,6 +7,38 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     max-width: 100%;
+    font-size: 16px;
+  }
+  
+  /* Adaptation responsive pour grands écrans (1536px, 1920px, 2180px, 2560px+) */
+  @media (min-width: 1536px) {
+    html {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1920px) {
+    html {
+      font-size: 22px;
+    }
+  }
+
+  @media (min-width: 2180px) {
+    html {
+      font-size: 25px;
+    }
+  }
+
+  @media (min-width: 2560px) {
+    html {
+      font-size: 28px;
+    }
+  }
+
+  @media (min-width: 3200px) {
+    html {
+      font-size: 32px;
+    }
   }
   
   body {

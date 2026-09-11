@@ -351,5 +351,50 @@
     "contactMe": "Contact Me",
     "discover": "Discover",
     "readMore": "Read More"
+  },
+  "place_card": {
+    "active_below": "Active below ↓",
+    "details_open": "Details open below ↓",
+    "see_details": "View details"
+  },
+  "place_details": {
+    "badge_title": "Place Details",
+    "hide": "Hide",
+    "tab_story": "History & Story",
+    "tab_story_short": "Story",
+    "tab_facts": "Practical Info & Tips",
+    "tab_facts_short": "Info",
+    "tab_gallery": "Gallery",
+    "tab_gallery_short": "Photos",
+    "presentation": "Overview",
+    "history_legends": "History, Origins & Legends",
+    "events_title": "Recommended Highlights & Best Moments",
+    "facts_title": "Practical Information & Access",
+    "tips_title": "Exclusive Tips from Your Local Guide",
+    "gallery_title": "High Resolution Photos",
+    "gallery_tap": "Tap to enlarge",
+    "view_badge": "View",
+    "book_button": "Book this place",
+    "ask_button": "Ask a question",
+    "close_top": "Close and scroll up",
+    "whatsapp_intro": "Hello ISLAND MADA TRAVEL! I would like more information and to organize an excursion for:"
+  },
+  "diego_page": {
+    "location_badge": "Antsiranana — Northern Madagascar",
+    "explore_title": "Explore Diego-Suarez",
+    "explore_subtitle": "Click on a place to discover its history, secrets, and guide tips",
+    "places_suffix": "place(s) to discover — click a card for details",
+    "cta_title": "Ready to explore Diego-Suarez?",
+    "cta_subtitle": "I offer custom guided tours across all these extraordinary places. Contact me to build your ideal itinerary.",
+    "cta_btn": "Plan my stay"
+  },
+  "nosy_page": {
+    "location_badge": "Nosy Be Archipelago — Mozambique Channel",
+    "explore_title": "Explore Nosy Be",
+    "explore_subtitle": "Click on a place to discover its history, secrets, and guide tips",
+    "places_suffix": "place(s) to discover — click a card for details",
+    "cta_title": "Ready for your stay in Nosy Be?",
+    "cta_subtitle": "I offer custom guided tours across all these paradise spots. Contact me to plan your unforgettable trip.",
+    "cta_btn": "Plan my trip"
   }
 }

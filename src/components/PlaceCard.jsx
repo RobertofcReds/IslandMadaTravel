@@ -1,6 +1,8 @@
 import { MapPin, ArrowRight, Star } from 'lucide-react'
+import { useLanguage } from '../context/LanguageContext'
 
 const PlaceCard = ({ place, onClick, isSelected }) => {
+  const { t } = useLanguage()
   const mainImage = place.images?.[0]?.url || ''
 
   return (
@@ -36,7 +38,7 @@ const PlaceCard = ({ place, onClick, isSelected }) => {
         )}
         {isSelected && (
           <span className="bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-md animate-pulse">
-            Actif en bas ↓
+            {t('place_card.active_below')}
           </span>
         )}
       </div>
@@ -87,7 +89,7 @@ const PlaceCard = ({ place, onClick, isSelected }) => {
             ? 'text-emerald-300 opacity-100 translate-y-0'
             : 'text-emerald-400 opacity-0 group-hover:opacity-100 translate-y-1 group-hover:translate-y-0'
         }`}>
-          <span>{isSelected ? 'Détails ouverts en bas ↓' : 'Voir les détails'}</span>
+          <span>{isSelected ? t('place_card.details_open') : t('place_card.see_details')}</span>
           <ArrowRight size={13} className={`transition-transform ${isSelected ? 'rotate-90' : 'group-hover:translate-x-1'}`} />
         </div>
       </div>

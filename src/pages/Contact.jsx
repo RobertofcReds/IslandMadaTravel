@@ -1,16 +1,24 @@
 import { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 
+import diegoMerEmeraude from '../images/destination/Mer d\'Émeraude.jpg'
+import nosyIranja from '../images/destination/Nosy Iranja.jpg'
+import diegoTroisBaies from '../images/destination/Les Trois Baies.jpg'
+import nosyParfums from '../images/destination/Nosy Be - Île aux Parfums.jpg'
+import diegoRamena from '../images/destination/Plage de Ramena.jpg'
+import nosyAndilana from '../images/destination/Plage d\'Andilana.jpg'
+
 const Contact = () => {
   const { t, language } = useLanguage()
   const [heroIndex, setHeroIndex] = useState(0)
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1524661135-423995f22d0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1493676304819-0d7a8d026dcf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    diegoMerEmeraude,
+    nosyIranja,
+    diegoTroisBaies,
+    nosyParfums,
+    diegoRamena,
+    nosyAndilana,
   ]
 
   useEffect(() => {
@@ -60,7 +68,7 @@ const Contact = () => {
             alt="Contact"
             className="w-full h-full object-cover transition-all duration-1000 scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-black/15"></div>
         </div>
 
         <div className="container-custom text-center text-white relative z-10 px-4 min-w-0">

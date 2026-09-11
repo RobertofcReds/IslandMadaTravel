@@ -351,5 +351,50 @@
     "contactMe": "Contáctame",
     "discover": "Descubrir",
     "readMore": "Leer Más"
+  },
+  "place_card": {
+    "active_below": "Activo abajo ↓",
+    "details_open": "Detalles abiertos abajo ↓",
+    "see_details": "Ver detalles"
+  },
+  "place_details": {
+    "badge_title": "Detalles del lugar",
+    "hide": "Ocultar",
+    "tab_story": "Historia & Relato",
+    "tab_story_short": "Historia",
+    "tab_facts": "Info práctica & Consejos",
+    "tab_facts_short": "Info",
+    "tab_gallery": "Galería",
+    "tab_gallery_short": "Fotos",
+    "presentation": "Presentación del lugar",
+    "history_legends": "Historia, Orígenes & Leyendas",
+    "events_title": "Momentos recomendados & Puntos clave",
+    "facts_title": "Información práctica & Acceso",
+    "tips_title": "Consejos exclusivos de su guía local",
+    "gallery_title": "Fotos en alta resolución",
+    "gallery_tap": "Toca para ampliar",
+    "view_badge": "Vista",
+    "book_button": "Reservar este lugar",
+    "ask_button": "Hacer una pregunta",
+    "close_top": "Cerrar y subir",
+    "whatsapp_intro": "¡Hola ISLAND MADA TRAVEL! Deseo más información y organizar una excursión para:"
+  },
+  "diego_page": {
+    "location_badge": "Antsiranana — Norte de Madagascar",
+    "explore_title": "Explorar Diego-Suarez",
+    "explore_subtitle": "Haz clic en un lugar para descubrir su historia, sus secretos y los consejos del guía",
+    "places_suffix": "lugar(es) por descubrir — haz clic en una tarjeta para los detalles",
+    "cta_title": "¿Listo para explorar Diego-Suarez?",
+    "cta_subtitle": "Te guío a medida a través de todos estos lugares extraordinarios. Contáctame para construir tu itinerario ideal.",
+    "cta_btn": "Planificar mi estancia"
+  },
+  "nosy_page": {
+    "location_badge": "Archipiélago de Nosy Be — Canal de Mozambique",
+    "explore_title": "Explorar Nosy Be",
+    "explore_subtitle": "Haz clic en un lugar para descubrir su historia, sus secretos y los consejos del guía",
+    "places_suffix": "lugar(es) por descubrir — haz clic en una tarjeta para los detalles",
+    "cta_title": "¿Listo para tu estancia en Nosy Be?",
+    "cta_subtitle": "Te guío a medida a través de todos estos lugares paradisíacos. Contáctame para planificar tu viaje inolvidable.",
+    "cta_btn": "Planificar mi viaje"
   }
 }

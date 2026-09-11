@@ -25,7 +25,7 @@ const Footer = ({ className = '' }) => {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4 pb-12">
 
           {/* Brand & Bio */}
           <div className="lg:col-span-2 min-w-0">

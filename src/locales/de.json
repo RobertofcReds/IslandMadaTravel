@@ -351,5 +351,50 @@
     "contactMe": "Kontaktieren Sie Mich",
     "discover": "Entdecken",
     "readMore": "Weiterlesen"
+  },
+  "place_card": {
+    "active_below": "Unten aktiv ↓",
+    "details_open": "Details unten geöffnet ↓",
+    "see_details": "Details ansehen"
+  },
+  "place_details": {
+    "badge_title": "Ortsdetails",
+    "hide": "Ausblenden",
+    "tab_story": "Geschichte & Erzählung",
+    "tab_story_short": "Geschichte",
+    "tab_facts": "Tipps & Praktisches",
+    "tab_facts_short": "Infos",
+    "tab_gallery": "Galerie",
+    "tab_gallery_short": "Fotos",
+    "presentation": "Übersicht des Ortes",
+    "history_legends": "Geschichte, Ursprünge & Legenden",
+    "events_title": "Empfohlene Erlebnisse & Beste Momente",
+    "facts_title": "Praktische Informationen & Anreise",
+    "tips_title": "Exklusive Tipps Ihres lokalen Guides",
+    "gallery_title": "Hochauflösende Fotos",
+    "gallery_tap": "Tippen zum Vergrößern",
+    "view_badge": "Ansicht",
+    "book_button": "Diesen Ort buchen",
+    "ask_button": "Eine Frage stellen",
+    "close_top": "Schließen und nach oben",
+    "whatsapp_intro": "Hallo ISLAND MADA TRAVEL! Ich möchte weitere Informationen und einen Ausflug organisieren für:"
+  },
+  "diego_page": {
+    "location_badge": "Antsiranana — Nord-Madagaskar",
+    "explore_title": "Diego-Suarez erkunden",
+    "explore_subtitle": "Klicken Sie auf einen Ort, um seine Geschichte, Geheimnisse und Guide-Tipps zu entdecken",
+    "places_suffix": "Ort(e) zu entdecken — klicken Sie auf eine Karte für Details",
+    "cta_title": "Bereit, Diego-Suarez zu erkunden?",
+    "cta_subtitle": "Ich führe Sie maßgeschneidert durch all diese außergewöhnlichen Orte. Kontaktieren Sie mich, um Ihre ideale Reiseroute zu erstellen.",
+    "cta_btn": "Meinen Aufenthalt planen"
+  },
+  "nosy_page": {
+    "location_badge": "Nosy Be Archipel — Kanal von Mosambik",
+    "explore_title": "Nosy Be erkunden",
+    "explore_subtitle": "Klicken Sie auf einen Ort, um seine Geschichte, Geheimnisse und Guide-Tipps zu entdecken",
+    "places_suffix": "Ort(e) zu entdecken — klicken Sie auf eine Karte für Details",
+    "cta_title": "Bereit für Ihren Aufenthalt auf Nosy Be?",
+    "cta_subtitle": "Ich führe Sie maßgeschneidert durch all diese paradiesischen Orte. Kontaktieren Sie mich, um Ihre unvergessliche Reise zu planen.",
+    "cta_btn": "Meine Reise planen"
   }
 }

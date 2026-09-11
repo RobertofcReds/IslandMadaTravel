@@ -2,16 +2,24 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useLanguage } from '../context/LanguageContext'
 
+import diegoMerEmeraude from '../images/destination/Mer d\'Émeraude.jpg'
+import nosyIranja from '../images/destination/Nosy Iranja.jpg'
+import diegoMontagneAmbre from '../images/destination/Forêt de Montagne d\'Ambre.jpg'
+import nosyTanikely from '../images/destination/Nosy Tanikely.jpg'
+import diegoTsingyRouges from '../images/destination/Tsingy Rouges.jpg'
+import nosyKomba from '../images/destination/Nosy Komba.jpg'
+
 const Services = () => {
   const { t } = useLanguage()
   const [heroIndex, setHeroIndex] = useState(0)
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
-    'https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+    diegoMerEmeraude,
+    nosyIranja,
+    diegoMontagneAmbre,
+    nosyTanikely,
+    diegoTsingyRouges,
+    nosyKomba,
   ]
 
   useEffect(() => {
@@ -87,7 +95,7 @@ const Services = () => {
             alt="Services"
             className="w-full h-full object-cover transition-all duration-1000 scale-105"
           />
-          <div className="absolute inset-0 bg-black/50 backdrop-blur-[2px]"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-black/15"></div>
         </div>
 
         {/* Content */}

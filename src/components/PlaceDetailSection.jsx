@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { ChevronLeft, ChevronRight, X, MapPin, Clock, Star, Info, Camera, BookOpen, MessageCircle, ArrowUp } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { useLanguage } from '../context/LanguageContext'
 
 const PlaceDetailSection = ({ place, onClose }) => {
+  const { t } = useLanguage()
   const [activeTab, setActiveTab] = useState('story')
   const [imgIndex, setImgIndex] = useState(0)
   const [imgLoaded, setImgLoaded] = useState(false)
@@ -42,13 +44,13 @@ const PlaceDetailSection = ({ place, onClose }) => {
   if (!place) return null
 
   const tabs = [
-    { id: 'story', label: 'Histoire & Récit', shortLabel: 'Histoire', icon: BookOpen },
-    { id: 'facts', label: 'À Savoir & Conseils', shortLabel: 'À Savoir', icon: Info },
-    { id: 'gallery', label: `Galerie (${place.images?.length || 0})`, shortLabel: `Photos (${place.images?.length || 0})`, icon: Camera },
+    { id: 'story', label: t('place_details.tab_story'), shortLabel: t('place_details.tab_story_short'), icon: BookOpen },
+    { id: 'facts', label: t('place_details.tab_facts'), shortLabel: t('place_details.tab_facts_short'), icon: Info },
+    { id: 'gallery', label: `${t('place_details.tab_gallery')} (${place.images?.length || 0})`, shortLabel: `${t('place_details.tab_gallery_short')} (${place.images?.length || 0})`, icon: Camera },
   ]
 
   const whatsappMessage = encodeURIComponent(
-    `Bonjour ISLAND MADA TRAVEL ! Je souhaite avoir plus d'informations et organiser une excursion pour : ${place.name} (${place.location || ''}).`
+    `${t('place_details.whatsapp_intro')} ${place.name} (${place.location || ''}).`
   )
 
   return (
@@ -65,7 +67,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
         <div className="flex items-center gap-2 min-w-0 flex-1">
           <span className="w-2 h-2 rounded-full bg-emerald-300 animate-ping shrink-0" />
           <span className="text-[11px] sm:text-xs md:text-sm font-semibold tracking-wide uppercase text-emerald-100 truncate">
-            Détails du lieu
+            {t('place_details.badge_title')}
           </span>
           <span className="hidden sm:inline text-emerald-200/60">•</span>
           <span className="hidden sm:inline text-xs text-emerald-100 font-medium truncate">
@@ -76,9 +78,9 @@ const PlaceDetailSection = ({ place, onClose }) => {
         <button
           onClick={onClose}
           className="inline-flex items-center gap-1.5 bg-white/15 hover:bg-white/25 active:scale-95 text-white px-3 py-1.5 rounded-full text-xs font-medium transition-all shadow-sm cursor-pointer shrink-0"
-          title="Fermer les détails"
+          title={t('place_details.hide')}
         >
-          <span>Masquer</span>
+          <span>{t('place_details.hide')}</span>
           <X size={15} />
         </button>
       </div>
@@ -106,14 +108,14 @@ const PlaceDetailSection = ({ place, onClose }) => {
           <>
             <button
               onClick={prevImg}
-              aria-label="Photo précédente"
+              aria-label="Previous photo"
               className="absolute left-2.5 sm:left-6 top-1/2 -translate-y-1/2 bg-black/45 hover:bg-black/70 backdrop-blur-md text-white p-2 sm:p-3 rounded-full transition-all opacity-85 hover:opacity-100 hover:scale-110 cursor-pointer"
             >
               <ChevronLeft size={18} className="sm:w-5 sm:h-5" />
             </button>
             <button
               onClick={nextImg}
-              aria-label="Photo suivante"
+              aria-label="Next photo"
               className="absolute right-2.5 sm:right-6 top-1/2 -translate-y-1/2 bg-black/45 hover:bg-black/70 backdrop-blur-md text-white p-2 sm:p-3 rounded-full transition-all opacity-85 hover:opacity-100 hover:scale-110 cursor-pointer"
             >
               <ChevronRight size={18} className="sm:w-5 sm:h-5" />
@@ -125,7 +127,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
                 <button
                   key={i}
                   onClick={() => { setImgLoaded(false); setImgIndex(i) }}
-                  aria-label={`Aller à la photo ${i + 1}`}
+                  aria-label={`Photo ${i + 1}`}
                   className={`transition-all rounded-full cursor-pointer ${
                     i === imgIndex ? 'w-5 sm:w-6 h-1.5 sm:h-2 bg-emerald-400' : 'w-1.5 sm:w-2 h-1.5 sm:h-2 bg-white/60 hover:bg-white'
                   }`}
@@ -175,7 +177,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
         </div>
       </div>
 
-      {/* Barre d'onglets - Grid 3 colonnes fluide (ZÉRO scroll horizontal) */}
+      {/* Barre d'onglets */}
       <div className="grid grid-cols-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50/90 dark:bg-gray-900/90 w-full min-w-0">
         {tabs.map(tab => {
           const Icon = tab.icon
@@ -222,7 +224,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
               <div>
                 <h3 className="font-serif text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-3 flex items-center gap-2">
                   <span className="w-1.5 h-5 bg-emerald-500 rounded-full inline-block shrink-0" />
-                  <span>Présentation du lieu</span>
+                  <span>{t('place_details.presentation')}</span>
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm sm:text-base">
                   {place.description}
@@ -235,7 +237,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
               <div className="bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200/80 dark:border-amber-700/40 rounded-xl sm:rounded-2xl p-4 sm:p-5">
                 <h3 className="font-serif font-bold text-amber-900 dark:text-amber-300 mb-2 flex items-center gap-2 text-sm sm:text-base">
                   <BookOpen size={17} className="text-amber-600 dark:text-amber-400 shrink-0" />
-                  <span>Histoire, Origines & Légendes</span>
+                  <span>{t('place_details.history_legends')}</span>
                 </h3>
                 <p className="text-amber-950 dark:text-amber-200/90 text-xs sm:text-sm md:text-base leading-relaxed">
                   {place.history}
@@ -248,7 +250,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
               <div>
                 <h3 className="font-serif text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 flex items-center gap-2">
                   <Clock size={18} className="text-emerald-500 shrink-0" />
-                  <span>Événements recommandés & Meilleurs moments</span>
+                  <span>{t('place_details.events_title')}</span>
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
                   {place.events.map((event, i) => (
@@ -283,7 +285,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
               <div>
                 <h3 className="font-serif text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 flex items-center gap-2">
                   <Info size={18} className="text-emerald-500 shrink-0" />
-                  <span>Informations pratiques & Accès</span>
+                  <span>{t('place_details.facts_title')}</span>
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                   {place.facts.map((fact, i) => (
@@ -317,7 +319,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
               <div className="bg-emerald-50/70 dark:bg-emerald-950/25 border border-emerald-200/80 dark:border-emerald-800/40 rounded-xl sm:rounded-2xl p-4 sm:p-5">
                 <h3 className="font-serif font-bold text-emerald-900 dark:text-emerald-200 mb-2.5 flex items-center gap-2 text-sm sm:text-base">
                   <Star size={17} className="text-emerald-500 shrink-0" />
-                  <span>Conseils exclusifs de votre guide local</span>
+                  <span>{t('place_details.tips_title')}</span>
                 </h3>
                 <ul className="space-y-2">
                   {place.tips.map((tip, i) => (
@@ -338,10 +340,10 @@ const PlaceDetailSection = ({ place, onClose }) => {
             <h3 className="font-serif text-base sm:text-xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4 flex items-center justify-between flex-wrap gap-2">
               <span className="flex items-center gap-2">
                 <Camera size={18} className="text-emerald-500 shrink-0" />
-                <span>Photos haute résolution</span>
+                <span>{t('place_details.gallery_title')}</span>
               </span>
               <span className="text-[11px] sm:text-xs text-gray-500 dark:text-gray-400 font-normal">
-                Touchez pour agrandir
+                {t('place_details.gallery_tap')}
               </span>
             </h3>
 
@@ -372,7 +374,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
                   </div>
                   {i === imgIndex && (
                     <div className="absolute top-1.5 right-1.5 bg-emerald-500 text-white text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-md">
-                      Vue
+                      {t('place_details.view_badge')}
                     </div>
                   )}
                 </button>
@@ -391,14 +393,14 @@ const PlaceDetailSection = ({ place, onClose }) => {
               className="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-700 active:scale-98 text-white font-semibold px-4 sm:px-6 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl transition-all shadow-lg shadow-emerald-600/25 flex items-center justify-center gap-2 text-xs sm:text-sm text-center"
             >
               <MessageCircle size={16} className="shrink-0" />
-              <span className="truncate">Réserver ce lieu</span>
+              <span className="truncate">{t('place_details.book_button')}</span>
             </a>
 
             <Link
               to="/contact"
               className="w-full sm:w-auto bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-800 dark:text-gray-100 font-medium px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl transition-all flex items-center justify-center gap-2 text-xs sm:text-sm text-center"
             >
-              <span>Poser une question</span>
+              <span>{t('place_details.ask_button')}</span>
             </Link>
           </div>
 
@@ -407,7 +409,7 @@ const PlaceDetailSection = ({ place, onClose }) => {
             className="text-gray-500 hover:text-emerald-600 dark:text-gray-400 dark:hover:text-emerald-400 text-xs sm:text-sm font-medium flex items-center justify-center gap-1.5 transition-colors cursor-pointer py-1.5"
           >
             <ArrowUp size={14} />
-            <span>Fermer et remonter</span>
+            <span>{t('place_details.close_top')}</span>
           </button>
         </div>
       </div>
