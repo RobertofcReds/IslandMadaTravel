@@ -149,7 +149,15 @@
       "label_message": "Nachricht *",
       "placeholder_message": "Beschreiben Sie Ihr Reiseprojekt (Anzahl der Personen, Vorlieben...)",
       "submit": "Meine Anfrage Senden",
-      "success": "Vielen Dank für Ihre Nachricht! Ich werde so schnell wie möglich antworten."
+      "submitting": "Wird gesendet...",
+      "success_title": "Nachricht Erfolgreich Gesendet!",
+      "success": "Vielen Dank für Ihre Nachricht! Ich werde so schnell wie möglich antworten.",
+      "error_title": "Fehler beim Senden der Nachricht",
+      "error_desc": "Beim Senden Ihrer Anfrage ist ein unerwarteter Fehler aufgetreten. Bitte überprüfen Sie Ihre Verbindung, versuchen Sie es erneut oder kontaktieren Sie mich direkt per WhatsApp.",
+      "retry": "Erneut versuchen",
+      "contact_whatsapp": "Über WhatsApp kontaktieren",
+      "response_time": "Antwort innerhalb von 24h garantiert",
+      "modal_close": "Verstanden, danke!"
     }
   },
   "destinations": {

@@ -149,7 +149,15 @@
       "label_message": "Message *",
       "placeholder_message": "Describe your travel project (number of people, preferences...)",
       "submit": "Send My Request",
-      "success": "Thank you for your message! I will reply as soon as possible."
+      "submitting": "Sending message...",
+      "success_title": "Message Sent Successfully!",
+      "success": "Thank you for your message! I will reply as soon as possible.",
+      "error_title": "Failed to Send Message",
+      "error_desc": "An unexpected error occurred while sending your request. Please check your connection, try again, or reach out to me directly on WhatsApp.",
+      "retry": "Try again",
+      "contact_whatsapp": "Contact via WhatsApp",
+      "response_time": "Response guaranteed within 24h",
+      "modal_close": "Got it, thanks!"
     }
   },
   "destinations": {

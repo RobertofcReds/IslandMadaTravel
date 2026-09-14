@@ -149,7 +149,15 @@
       "label_message": "Messaggio *",
       "placeholder_message": "Descrivi il tuo progetto di viaggio (numero di persone, preferenze...)",
       "submit": "Invia la Mia Richiesta",
-      "success": "Grazie per il tuo messaggio! Ti risponderò il prima possibile."
+      "submitting": "Invio in corso...",
+      "success_title": "Messaggio Inviato con Successo!",
+      "success": "Grazie per il tuo messaggio! Ti risponderò il prima possibile.",
+      "error_title": "Errore nell'Invio del Messaggio",
+      "error_desc": "Si è verificato un errore imprevisto durante l'invio della richiesta. Verifica la connessione, riprova o contattami direttamente su WhatsApp.",
+      "retry": "Riprova",
+      "contact_whatsapp": "Contatta su WhatsApp",
+      "response_time": "Risposta garantita entro 24h",
+      "modal_close": "Ricevuto, grazie!"
     }
   },
   "destinations": {
